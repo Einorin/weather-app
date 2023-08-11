@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  display: flex;
+  height: 48px;
+  width: 100vw;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 12px 0 12px;
+  background: url(./images/oc-gonzalez-xg8z_KhSorQ-unsplash.jpg);
+}
+
+.logo,
+.search,
+ul li a {
+  list-style: none;
+  text-decoration: none;
+  color: inherit;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: 800;
+}
+#search {
+  width: 8rem;
+}
+body {
+  background: url(./images/oc-gonzalez-xg8z_KhSorQ-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    background-size: auto;
+  }
+}
