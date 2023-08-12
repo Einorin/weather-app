@@ -2,7 +2,7 @@ import "./style.css";
 // import backgroundImg from './images/oc-gonzalez-xg8z_KhSorQ-unsplash.jpg'
 
 const baseURL =
-  "http://api.weatherapi.com/v1/current.json?key=e2952967c6f348b5ae622932230908&q=";
+  "https://api.weatherapi.com/v1/current.json?key=e2952967c6f348b5ae622932230908&q=";
 
 function weatherApiUrl(cityName) {
   return `${baseURL + cityName}&aqi=no`;
