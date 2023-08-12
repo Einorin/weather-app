@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  height: calc(100vh - 48px);
+}
 
 ul {
   display: flex;
@@ -22,10 +25,24 @@ ul li a {
   text-decoration: none;
   color: inherit;
 }
-
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .logo {
   font-size: 2rem;
   font-weight: 800;
+  color: #fff;
+  text-shadow:
+    0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 15px #fff,
+    0 0 20px #49ff18,
+    0 0 30px #49ff18,
+    0 0 40px #49ff18,
+    0 0 55px #49ff18,
+    0 0 75px #49ff18;
 }
 #search {
   width: 8rem;
@@ -34,10 +51,80 @@ body {
   background: url(./images/oc-gonzalez-xg8z_KhSorQ-unsplash.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.wholeBody {
+  display: grid;
+  height: 100%;
+  grid-template-columns: 1fr 2.8fr;
 }
 
-@media screen and (max-width: 800px) {
+.left {
+  display: grid;
+  gap: 2rem;
+  padding: 2rem;
+  grid-template-rows: 1fr 1fr;
+}
+
+.tempC,
+.tempF {
+  margin: 0 2rem 0 0;
+  color: white;
+}
+
+.weatherIcon {
+  width: 100px;
+  height: 100px;
+  /* background: url(./images/cloudWhite.svg); */
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.weatherCondition {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #fff;
+}
+
+.country,
+.city {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: white;
+}
+
+.mainContent {
+  display: grid;
+  /* grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); */
+  /* grid-template-rows: 1fr 1fr 1fr; */
+  gap: 12px;
+  align-items: center;
+  padding: 8px;
+}
+
+.leftBot {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  font-size: 1.5rem;
+}
+
+#currC,
+#currF,
+#feelsF,
+#feelsC {
+  font-size: 3.5rem;
+}
+
+.error {
+  visibility: hidden;
+  color: darkred;
+  font-weight: 800;
+  font-size: 2rem;
+  margin: 8px;
+}
+
+/* @media screen and (max-width: 1200px) {
   body {
     background-size: auto;
   }
-}
+} */

@@ -2,22 +2,22 @@
   "use strict";
   var e = {
       426: (e, n, t) => {
-        t.d(n, { Z: () => d });
+        t.d(n, { Z: () => p });
         var o = t(81),
           r = t.n(o),
-          c = t(645),
-          a = t.n(c),
-          i = t(667),
-          s = t.n(i),
-          l = new URL(t(206), t.b),
-          u = a()(r()),
-          p = s()(l);
-        u.push([
+          i = t(645),
+          c = t.n(i),
+          a = t(667),
+          s = t.n(a),
+          u = new URL(t(206), t.b),
+          l = c()(r()),
+          d = s()(u);
+        l.push([
           e.id,
-          `*{\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n}\n\n\nul{\n  display: flex;\n  height: 48px;\n  width: 100vw;\n  flex-direction: row;\n  justify-content: space-between;\n  align-items: center;\n  padding: 0 12px 0 12px;\n  background: url(${p});\n}\n\n.logo, .search,\nul li a{\n  list-style: none;\n  text-decoration: none;\n  color: inherit;\n}\n\n.logo{\n  font-size: 2rem;\n  font-weight: 800;\n}\n#search{\n  width: 8rem;\n}\nbody{\n  background: url(${p});\n  background-size: cover;\n  background-repeat: no-repeat;\n}\n\n@media screen and (max-width: 800px){\n  body{\n    background-size: auto;\n  }\n}`,
+          `* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n}\nbody{\n  height: calc(100vh - 48px);\n}\n\nul {\n  display: flex;\n  height: 48px;\n  width: 100vw;\n  flex-direction: row;\n  justify-content: space-between;\n  align-items: center;\n  padding: 0 12px 0 12px;\n  background: url(${d});\n}\n\n.logo,\n.search,\nul li a {\n  list-style: none;\n  text-decoration: none;\n  color: inherit;\n}\n.search{\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n.logo {\n  font-size: 2rem;\n  font-weight: 800;\n  color: #FFF;\n  text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18\n\n}\n#search {\n  width: 8rem;\n}\nbody {\n  background: url(${d});\n  background-size: cover;\n  background-repeat: no-repeat;\n  background-attachment: fixed;\n}\n.wholeBody{\n  display: grid;\n  height: 100%;\n  grid-template-columns: 1fr 2.8fr;\n}\n\n\n.left{\n  display: grid;\n  gap: 2rem;\n  padding: 2rem;\n  grid-template-rows: 1fr 1fr;\n}\n\n\n.tempC, .tempF{\n  margin: 0 2rem 0 0;\n  color: white;\n}\n\n.weatherIcon{\n  width: 100px;\n  height: 100px;\n  /* background: url(./images/cloudWhite.svg); */\n  background-size: cover;\n  background-repeat: no-repeat;\n}\n.weatherCondition{\n  font-size: 2rem;\n  font-weight: 800;\n  color: #FFF;\n  \n}\n\n.country, .city{\n  font-size: 1.5rem;\n  font-weight: 600;\n  color: white;\n}\n\n.mainContent{\n  display: grid;\n  /* grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); */\n  /* grid-template-rows: 1fr 1fr 1fr; */\n  gap: 12px;\n  align-items: center;\n  padding: 8px;\n}\n\n.leftBot{\n  display: flex;\n  flex-direction: column;\n  gap: 12px;\n  font-size: 1.5rem;\n}\n\n#currC, #currF, #feelsF, #feelsC{\n  font-size: 3.5rem;\n}\n\n.error{\n  visibility: hidden;\n  color: darkred;\n  font-weight: 800;\n  font-size: 2rem;\n  margin: 8px;\n}\n\n\n/* @media screen and (max-width: 1200px) {\n  body {\n    background-size: auto;\n  }\n} */\n`,
           "",
         ]);
-        const d = u;
+        const p = l;
       },
       645: (e) => {
         e.exports = function (e) {
@@ -43,38 +43,38 @@
                 );
               }).join("");
             }),
-            (n.i = function (e, t, o, r, c) {
+            (n.i = function (e, t, o, r, i) {
               "string" == typeof e && (e = [[null, e, void 0]]);
-              var a = {};
+              var c = {};
               if (o)
-                for (var i = 0; i < this.length; i++) {
-                  var s = this[i][0];
-                  null != s && (a[s] = !0);
+                for (var a = 0; a < this.length; a++) {
+                  var s = this[a][0];
+                  null != s && (c[s] = !0);
                 }
-              for (var l = 0; l < e.length; l++) {
-                var u = [].concat(e[l]);
-                (o && a[u[0]]) ||
-                  (void 0 !== c &&
-                    (void 0 === u[5] ||
-                      (u[1] = "@layer"
-                        .concat(u[5].length > 0 ? " ".concat(u[5]) : "", " {")
-                        .concat(u[1], "}")),
-                    (u[5] = c)),
+              for (var u = 0; u < e.length; u++) {
+                var l = [].concat(e[u]);
+                (o && c[l[0]]) ||
+                  (void 0 !== i &&
+                    (void 0 === l[5] ||
+                      (l[1] = "@layer"
+                        .concat(l[5].length > 0 ? " ".concat(l[5]) : "", " {")
+                        .concat(l[1], "}")),
+                    (l[5] = i)),
                   t &&
-                    (u[2]
-                      ? ((u[1] = "@media "
-                          .concat(u[2], " {")
-                          .concat(u[1], "}")),
-                        (u[2] = t))
-                      : (u[2] = t)),
+                    (l[2]
+                      ? ((l[1] = "@media "
+                          .concat(l[2], " {")
+                          .concat(l[1], "}")),
+                        (l[2] = t))
+                      : (l[2] = t)),
                   r &&
-                    (u[4]
-                      ? ((u[1] = "@supports ("
-                          .concat(u[4], ") {")
-                          .concat(u[1], "}")),
-                        (u[4] = r))
-                      : (u[4] = "".concat(r))),
-                  n.push(u));
+                    (l[4]
+                      ? ((l[1] = "@supports ("
+                          .concat(l[4], ") {")
+                          .concat(l[1], "}")),
+                        (l[4] = r))
+                      : (l[4] = "".concat(r))),
+                  n.push(l));
               }
             }),
             n
@@ -115,13 +115,13 @@
           return t;
         }
         function o(e, o) {
-          for (var c = {}, a = [], i = 0; i < e.length; i++) {
-            var s = e[i],
-              l = o.base ? s[0] + o.base : s[0],
-              u = c[l] || 0,
-              p = "".concat(l, " ").concat(u);
-            c[l] = u + 1;
-            var d = t(p),
+          for (var i = {}, c = [], a = 0; a < e.length; a++) {
+            var s = e[a],
+              u = o.base ? s[0] + o.base : s[0],
+              l = i[u] || 0,
+              d = "".concat(u, " ").concat(l);
+            i[u] = l + 1;
+            var p = t(d),
               f = {
                 css: s[1],
                 media: s[2],
@@ -129,15 +129,15 @@
                 supports: s[4],
                 layer: s[5],
               };
-            if (-1 !== d) n[d].references++, n[d].updater(f);
+            if (-1 !== p) n[p].references++, n[p].updater(f);
             else {
-              var h = r(f, o);
-              (o.byIndex = i),
-                n.splice(i, 0, { identifier: p, updater: h, references: 1 });
+              var m = r(f, o);
+              (o.byIndex = a),
+                n.splice(a, 0, { identifier: d, updater: m, references: 1 });
             }
-            a.push(p);
+            c.push(d);
           }
-          return a;
+          return c;
         }
         function r(e, n) {
           var t = n.domAPI(n);
@@ -159,18 +159,18 @@
           );
         }
         e.exports = function (e, r) {
-          var c = o((e = e || []), (r = r || {}));
+          var i = o((e = e || []), (r = r || {}));
           return function (e) {
             e = e || [];
-            for (var a = 0; a < c.length; a++) {
-              var i = t(c[a]);
-              n[i].references--;
+            for (var c = 0; c < i.length; c++) {
+              var a = t(i[c]);
+              n[a].references--;
             }
-            for (var s = o(e, r), l = 0; l < c.length; l++) {
-              var u = t(c[l]);
-              0 === n[u].references && (n[u].updater(), n.splice(u, 1));
+            for (var s = o(e, r), u = 0; u < i.length; u++) {
+              var l = t(i[u]);
+              0 === n[l].references && (n[l].updater(), n.splice(l, 1));
             }
-            c = s;
+            i = s;
           };
         };
       },
@@ -233,12 +233,12 @@
                   r && (o += "}"),
                   t.media && (o += "}"),
                   t.supports && (o += "}");
-                var c = t.sourceMap;
-                c &&
+                var i = t.sourceMap;
+                i &&
                   "undefined" != typeof btoa &&
                   (o +=
                     "\n/*# sourceMappingURL=data:application/json;base64,".concat(
-                      btoa(unescape(encodeURIComponent(JSON.stringify(c)))),
+                      btoa(unescape(encodeURIComponent(JSON.stringify(i)))),
                       " */",
                     )),
                   n.styleTagTransform(o, e, n.options);
@@ -270,8 +270,8 @@
   function t(o) {
     var r = n[o];
     if (void 0 !== r) return r.exports;
-    var c = (n[o] = { id: o, exports: {} });
-    return e[o](c, c.exports, t), c.exports;
+    var i = (n[o] = { id: o, exports: {} });
+    return e[o](i, i.exports, t), i.exports;
   }
   (t.m = e),
     (t.n = (e) => {
@@ -318,87 +318,135 @@
         n = t.n(e),
         o = t(795),
         r = t.n(o),
-        c = t(569),
-        a = t.n(c),
-        i = t(565),
-        s = t.n(i),
-        l = t(216),
-        u = t.n(l),
-        p = t(589),
-        d = t.n(p),
+        i = t(569),
+        c = t.n(i),
+        a = t(565),
+        s = t.n(a),
+        u = t(216),
+        l = t.n(u),
+        d = t(589),
+        p = t.n(d),
         f = t(426),
-        h = {};
-      function m(e) {
+        m = {};
+      (m.styleTagTransform = p()),
+        (m.setAttributes = s()),
+        (m.insert = c().bind(null, "head")),
+        (m.domAPI = r()),
+        (m.insertStyleElement = l()),
+        n()(f.Z, m),
+        f.Z && f.Z.locals && f.Z.locals;
+      const g = t.p + "b3f25088dad8a8dc336f.svg",
+        y = t.p + "1239cbd1467b77ca1fb8.svg",
+        h = t.p + "1d265467bb1e07e03352.svg",
+        b = t.p + "7fc799939683bfc66890.svg",
+        v = t.p + "3b9b973ade3aee403440.svg";
+      function x(e) {
         return (
-          "http://api.weatherapi.com/v1/current.json?key=e2952967c6f348b5ae622932230908&q=" +
+          "https://api.weatherapi.com/v1/current.json?key=e2952967c6f348b5ae622932230908&q=" +
           e +
           "&aqi=no"
         );
       }
-      (h.styleTagTransform = d()),
-        (h.setAttributes = s()),
-        (h.insert = a().bind(null, "head")),
-        (h.domAPI = r()),
-        (h.insertStyleElement = u()),
-        n()(f.Z, h),
-        f.Z && f.Z.locals && f.Z.locals;
-      let g = "manila";
-      async function v(e) {
+      const w = document.querySelector(".weatherIcon");
+      let F = "manila";
+      const C = document.querySelector(".error");
+      async function k(e) {
         try {
           const n = await fetch(e, { mode: "cors" });
           if (!n.ok) throw new Error("network response was not ok");
           const t = await n.json(),
             o = t.current.condition.text,
             r = t.location.country,
-            c = t.location.name,
-            a = t.current.temp_c,
-            i = t.current.feelslike_c;
-          return (function (e, n, t, o, r, c, a) {
+            i = t.location.name,
+            c = t.current.temp_c,
+            a = t.current.feelslike_c;
+          return (function (e, n, t, o, r, i, c) {
             return {
               condition: e,
               location: n,
               cityLoc: t,
               tempC: o,
               feelsLIkeC: r,
-              tempF: c,
-              feelsLikeF: a,
+              tempF: i,
+              feelsLikeF: c,
             };
-          })(o, r, c, a, i, t.current.temp_f, t.current.feelslike_f);
+          })(o, r, i, c, a, t.current.temp_f, t.current.feelslike_f);
         } catch (e) {
           console.error("Error", e);
         }
       }
-      v(m(g)).then((e) => {
+      k(x(F)).then((e) => {
         e
-          ? (console.log(e.condition),
-            console.log(e.location),
-            console.log(e.cityLoc),
-            console.log(e.tempC),
-            console.log(e.feelsLIkeC),
-            console.log(e.tempF),
-            console.log(e.feelsLikeF))
-          : console.log("Data does not exist");
+          ? ((document.querySelector(".weatherCondition").textContent =
+              e.condition),
+            e.condition.includes("cloud") || e.condition.includes("Cloud")
+              ? (w.style.backgroundImage = `url(${g})`)
+              : e.condition.includes("sun") ||
+                e.condition.includes("Sun") ||
+                e.condition.includes("hot")
+              ? (w.style.backgroundImage = `url(${b})`)
+              : e.condition.includes("rain") || e.condition.includes("Rain")
+              ? (w.style.backgroundImage = `url(${y})`)
+              : e.condition.includes("snow") || e.condition.includes("Snow")
+              ? (w.style.backgroundImage = `url(${h})`)
+              : "Mist" === e.condition || "Fog" === e.condition
+              ? (w.style.backgroundImage = `url(${v})`)
+              : (w.style.backgroundImage = `url(${g})`),
+            (document.querySelector(".country").textContent = e.location),
+            (document.querySelector(".city").textContent = e.cityLoc),
+            (document.querySelector("#currC").textContent = e.tempC),
+            (document.querySelector("#FeelsC").textContent = e.feelsLIkeC),
+            (document.querySelector("#currF").textContent = e.tempF),
+            (document.querySelector("#FeelsF").textContent = e.feelsLikeF))
+          : ((C.style.visibility = "visible"),
+            setTimeout(() => {
+              C.style.visibility = "hidden";
+            }, 2e3));
       }),
         document
           .querySelector("button")
           .addEventListener("click", async (e) => {
             e.preventDefault();
             const n = document.querySelector("#search").value;
-            g = n;
-            const t = m(g);
+            F = n;
+            const t = x(F);
             try {
-              const e = await v(t);
+              const e = await k(t);
               e
-                ? (console.log(e.condition),
-                  console.log(e.location),
-                  console.log(e.cityLoc),
-                  console.log(e.tempC),
-                  console.log(e.feelsLIkeC),
-                  console.log(e.tempF),
-                  console.log(e.feelsLikeF))
-                : console.log("Data does not exist");
+                ? ((document.querySelector(".weatherCondition").textContent =
+                    e.condition),
+                  e.condition.includes("cloud") || e.condition.includes("Cloud")
+                    ? (w.style.backgroundImage = `url(${g})`)
+                    : e.condition.includes("sun") ||
+                      e.condition.includes("Sun") ||
+                      e.condition.includes("hot")
+                    ? (w.style.backgroundImage = `url(${b})`)
+                    : e.condition.includes("rain") ||
+                      e.condition.includes("Rain")
+                    ? (w.style.backgroundImage = `url(${y})`)
+                    : e.condition.includes("snow") ||
+                      e.condition.includes("Snow")
+                    ? (w.style.backgroundImage = `url(${h})`)
+                    : "Mist" === e.condition || "Fog" === e.condition
+                    ? (w.style.backgroundImage = `url(${v})`)
+                    : (w.style.backgroundImage = `url(${g})`),
+                  (document.querySelector(".country").textContent = e.location),
+                  (document.querySelector(".city").textContent = e.cityLoc),
+                  (document.querySelector("#currC").textContent = e.tempC),
+                  (document.querySelector("#FeelsC").textContent =
+                    e.feelsLIkeC),
+                  (document.querySelector("#currF").textContent = e.tempF),
+                  (document.querySelector("#FeelsF").textContent =
+                    e.feelsLikeF))
+                : ((C.style.visibility = "visible"),
+                  setTimeout(() => {
+                    C.style.visibility = "hidden";
+                  }, 2e3));
             } catch (e) {
-              console.error("Error", e);
+              (C.style.visibility = "visible"),
+                setTimeout(() => {
+                  C.style.visibility = "hidden";
+                }, 3e3);
             }
           });
     })();
