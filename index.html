@@ -10,6 +10,7 @@
       <ul>
         <li class="logo"><a href="#">Weather</a></li>
         <li class="search">
+          <div class="error">Can't find the city</div>
           <input
             placeholder="Enter a city"
             type="search"
@@ -19,6 +20,33 @@
         </li>
       </ul>
     </nav>
+    <div class="wholeBody">
+      <div class="left">
+        <div class="mainContent">
+          <div class="weatherCondition"></div>
+          <div class="weatherIcon"></div>
+          <div class="country"></div>
+          <div class="city"></div>
+        </div>
+        <div class="leftBot">
+          <div class="tempC">
+            <div>
+              Temperature: <br />
+              <sub><span id="currC"></span></sub><sup>°C</sup>
+            </div>
+            <div>Feels like <br /><span id="FeelsC"></span><sup>°C</sup></div>
+          </div>
+          <div class="tempF">
+            <div>
+              Temperature: <br />
+              <sub><span id="currF"></span></sub><sup>°F</sup>
+            </div>
+            <div>Feels like <br /><span id="FeelsF"></span><sup>°F</sup></div>
+          </div>
+        </div>
+      </div>
+      <div class="right"></div>
+    </div>
     <script src="main.js"></script>
   </body>
 </html>
